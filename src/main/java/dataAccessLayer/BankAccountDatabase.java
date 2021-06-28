@@ -1,7 +1,6 @@
 package dataAccessLayer;
 
 import java.util.ArrayList;
-import service.NewAccountRequest;
 
 public class BankAccountDatabase {
 
@@ -12,11 +11,12 @@ public class BankAccountDatabase {
   public void addingNewAccountToDatabase(BankAccountModel bankAccount){
 
     bankAccountDatabase.add(bankAccount);
+    for (BankAccountModel model: bankAccountDatabase) {
+      System.out.println(model.toString());
+
+
+    }
   }
-
-
-
-
 
 
 

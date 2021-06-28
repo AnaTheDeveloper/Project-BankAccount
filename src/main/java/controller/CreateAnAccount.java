@@ -12,9 +12,9 @@ public class CreateAnAccount {
 
   public boolean checkNumberRequest(String number){
 
-    if (number != "1"){
-      //send to other controller
-    }
+//    if (number != "1"){
+//      return false;
+//    }
 
     newAccountRequest = new NewAccountRequest();      //Copied other class.       //Dependency because this piece of code is not in this section but this section requires it to run. //Here i am initialising it.
 

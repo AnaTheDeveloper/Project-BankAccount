@@ -8,14 +8,13 @@ public class BankAccountModel {
 
   private String username;
   private String password;
-  private double balance;
+  private double balance = 0;
   private String appointments;
   private RoleBasedAuthentication role;
 
-  public BankAccountModel(String username, String password, double balance) {
+  public BankAccountModel(String username, String password) {
     this.username = username;
     this.password = password;
-    this.balance = balance;
   }
 
   public String getUsername() {
@@ -53,5 +52,17 @@ public class BankAccountModel {
 
   public void setRole(RoleBasedAuthentication role) {
     this.role = role;
+  }
+
+
+  @Override
+  public String toString() {
+    return "BankAccountModel{" +
+        "username='" + username + '\'' +
+        ", password='" + password + '\'' +
+        ", balance=" + balance +
+        ", appointments='" + appointments + '\'' +
+        ", role=" + role +
+        '}';
   }
 }
